@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jitik1</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/pages/galleryPage/galleryPage.css">
+    <link rel="stylesheet" href="/pages/about/about.css">
+    <link rel="stylesheet" href="/pages/japanDesk/japanDesk.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<!-- Bootstrap CSS -->
+</head>
+    
+<body>
+	<nav style="z-index: 100; position: fixed; top: 1%; right: .5%;">
+  <input type="checkbox" id="active" />
+  <label for="active" class="menu-btn">&#10761;</label>
+  <div class="wrapper">
+    <ul>
+      <li class="navLink"><a href="/">Home</a></li>
+      <li class="navLink"><a href="/pages/about/about.html">About Us</a></li>
+      <li class="navLink"><a href="/pages/japanWeek/japanWeek.html">Japan Week</a></li>
+      <li class="navLink"><a href="#">Scholarship and Research Grant</a></li>
+      <li class="navLink"><a href="#">Activity Highlights</a></li>
+      <li class="navLink"><a href="#">Useful Links</a></li>
+      <li class="navLink"><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <div id="hero">
+  <div>
+    <div
+      id="hero"
+      style="z-index: 0; max-width: 100vw; height: 100vh; overflow: hidden"
+    >
+      <div id="particles-js"></div>
+    </div>
+    <div style="position: absolute; top: 40%">
+      <div class="hero_text">
+        <h1>Japan Desk <span>@IITH</span></h1>
+        <p>
+          The Japan Desk is a sustainable platform for academic and
+          industry-university collaboration between India and Japan. For this
+          purpose, the Japan Desk provides one-stop services to support academic
+          and industry-university collaboration both for IITH and Japanese
+          academic institutions and industries.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="window"></div>
+
+<section id="message">
+  <div class="content">
+    <div class="image">
+      <img src="./assets//images/prof-tarun.jpg" alt="" />
+    </div>
+    <div class="text">
+      <div>
+        <h1>Dean's Words :</h1>
+        <h6>
+          As a part of the active collaboration between Japan and IIT Hyderabad,
+          'Japan Desk', is launched at IIT Hyderabad and this is the
+          first-of-its-kind initiative among all IITs to facilitate India -
+          Japan Academic & Industrial collaborations. We aim to provide a
+          one-stop solution for all the student, faculty and company queries
+          facilitated through this portal and unlock the full potential of our
+          collaboration for mutual benefit. We anticipate enhanced Human
+          Resources development in the fields of academia and industry through
+          our strong collaboration.
+        </h6>
+      </div>
+      <div>
+        <button role="button">Click Here</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div>
+    <div class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide4" class="carousel__prev"
+              >Go to last slide</a
+            >
+            <a href="#carousel__slide2" class="carousel__next"
+              >Go to next slide</a
+            >
+          </div>
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide1" class="carousel__prev"
+            >Go to previous slide</a
+          >
+          <a href="#carousel__slide3" class="carousel__next"
+            >Go to next slide</a
+          >
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide2" class="carousel__prev"
+            >Go to previous slide</a
+          >
+          <a href="#carousel__slide4" class="carousel__next"
+            >Go to next slide</a
+          >
+        </li>
+        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide3" class="carousel__prev"
+            >Go to previous slide</a
+          >
+          <a href="#carousel__slide1" class="carousel__next"
+            >Go to first slide</a
+          >
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1" class="carousel__navigation-button"
+              >Go to slide 1</a
+            >
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2" class="carousel__navigation-button"
+              >Go to slide 2</a
+            >
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3" class="carousel__navigation-button"
+              >Go to slide 3</a
+            >
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide4" class="carousel__navigation-button"
+              >Go to slide 4</a
+            >
+          </li>
+        </ol>
+      </aside>
+    </div>
+
+    <div class="button">
+      <a href="./pages/galleryPage/galleryPage.html">
+        <button>Go To Gallery</button>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="content">
+    <div class="friendship2">
+      <h1>About FRIENDSHIP <span style="color: orangered;">2.0</span></h1>
+      <h6>
+        FRIENDSHIP 2.0 was launched in December 2021 as the second phase of
+        the": Project for Future Researchers at IITH to Enhance Network
+        Development with Scholarship of Japan in the Republic of India
+        (FRIENDSHIP) Project," which was implemented by the Japan International
+        Cooperation Agency (JICA) since 2012 to promote industry-university
+        collaboration between Japan and India FRIENDSHIP 2.0 aims to build a
+        sustainable platform for academic and industrial collaboration between
+        Japan and India at IITH, and to ensure that the human resources produced
+        from this platform will continuously contribute to the academic and
+        industrial development of both countries. We will also promote
+        Japan-India collaboration from the perspective of Make in India and
+        SDGs. As part of this effort, we have established the Japan Desk within
+        IITH as a one-stop contact point for all information related to
+        Japan-India collaboration, including study in Japan and joint research.
+      </h6>
+    </div>
+    <div class="friendship1">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              About FriendShip 1.0
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <h1>FRIENDSHIP <span style="color: orangered;">1.0</span></h1>
+              <p>
+                FRIENDSHIP Project aims to contribute to the further development
+                in the educational and research activities of IITH through the
+                world-class research network between IITH and higher education
+                institutions & industrial clusters of Japan, whereby both can
+                establish educational and research excellence in the field of
+                science, technology and engineering in the future.
+              </p>
+              <p>
+                We have the previous project of FRIENDSHIP. Please
+                <a href="http://friendship.iith.ac.in/?page_id=824">click here</a>
+                to find the photo gallery in Phase1.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="events">
+  <div>
+    <h1>Events</h1>
+  </div>
+  <div class="content">
+    <ol>
+      <li>
+        <a href="">
+          Call for applications for the logo of Japan Desk.
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Pre-announcement and the online orientation of the FRIENDSHIP 2.0 Research Grant 2023.
+        </a>
+      </li>
+      <li>
+        <a href="">
+          First online Joint Coordination Committee Meeting was held on June 2nd.
+        </a>
+      </li>
+      <li>
+        <a class="disabled" href="">
+          Pre-announcement and the online orientation of the FRIENDSHIP 2.0 Scholarship 2023.
+        </a>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+
+<section id="news">
+  <div>
+    <div>
+      <h1>
+        Research and Scholarships
+      </h1>
+    </div>
+    <div class="news">
+      <div class="newsCard">
+        <a href="#">
+           <button>
+              Special Training Program for Robotics Engineers at the graduate school of Osaka University. 
+           </button>
+        </a>
+      </div>
+      <div class="newsCard">
+        <a href="#">
+           <button>
+              Special Training Program for Robotics Engineers at the graduate school of Osaka University. 
+           </button>
+        </a>
+      </div>
+      <div class="newsCard">
+        <a href="#">
+           <button>
+              Special Training Program for Robotics Engineers at the graduate school of Osaka University. 
+           </button>
+        </a>
+      </div>
+      <div class="newsCard">
+        <a href="#">
+           <button>
+              Special Training Program for Robotics Engineers at the graduate school of Osaka University. 
+           </button>
+        </a>
+      </div>
+      <div class="newsCard">
+        <a href="#">
+           <button>
+              Special Training Program for Robotics Engineers at the graduate school of Osaka University. 
+           </button>
+        </a>
+      </div>
+      <div class="newsCard">
+        <a href="#">
+           <button>
+              Special Training Program for Robotics Engineers at the graduate school of Osaka University. 
+           </button>
+        </a>
+      </div>
+      <div class="newsCard">
+        <a href="#">
+           <button>
+              Special Training Program for Robotics Engineers at the graduate school of Osaka University. 
+           </button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+	
+
+<div id="window2">
+
+</div>
+<div class="footerDiv">
+  <footer id="footer" class="footer">
+    <div>
+      <img src="./assets/images/logo.png" alt="">
+      <div class="address">
+          <p>
+              IITH Road, Near NH-65, Sangareddy, Kandi, 
+              <br>
+              Telangana 502285
+          </p>
+      </div>
+    </div>
+  
+    <div>
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Quick Links </h2>
+            <ul class="nav__ul">
+              <li>
+                <a href="/#hero">Home</a>
+              </li>
+              <li>
+                <a target="_blank" href="#">Random</a>
+              </li>
+        
+              <li>
+                <a target="_blank" href="#">Random</a>
+              </li>
+              <li>
+                <a target="_blank" href="#">Random</a>
+              </li>
+              <li>
+                <a target="_blank" href="#">Random</a>
+              </li>
+              <li>
+                <a target="_blank" href="#">Random</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+  </footer>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  
+  <!-- Main Js File -->
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+</body>
+
+</html>

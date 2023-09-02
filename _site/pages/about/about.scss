@@ -1,0 +1,59 @@
+#aboutPage{
+  section {
+    padding-block: 4rem;
+  }
+
+
+  #meetTheTeam{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    .teamCard{
+      text-align: center;
+      background-color: orange;
+      border: 2px solid black;
+      padding-inline: 2rem;
+      padding-block: 2rem;
+      min-width: 300px;
+      max-width: 450px;
+    }
+    .team{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 2rem;
+    }
+  }
+
+  #staff{
+    min-height: 0;
+    margin-bottom: 0;
+    background-image: url(../../assets//images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .mamBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem;
+        img{
+          max-width: 400px;
+          min-width: 300px;
+        }
+        .mam{
+          padding-top: 4rem;
+        }
+        
+      }
+    }
+  }
+}

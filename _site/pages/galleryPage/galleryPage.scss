@@ -1,0 +1,69 @@
+#galleryPage{
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  .container {
+    grid-area: c;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 200px;
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    overflow: auto;
+    padding-right: 20px;
+    /*fix box-shadow on right side cutting off*/
+  }
+  
+  /*scrollbar stuff*/
+  .container {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+  }
+  
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .container>div {
+    z-index: 1;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2),
+      5px 5px 25px rgba(0, 0, 0, .1);
+    transition: all .3s ease-in-out;
+  }
+  
+  .container div img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all .6s ease-in-out;
+  }
+  
+  /*make bIG*/
+  .container>div:hover,
+  .container>div:hover img {
+    transform: scale(1.05);
+  }
+  
+  .container>div:hover img {
+    transform: scale(1.06);
+  }
+  
+  .vertical {
+    grid-row: span 2;
+  }
+  
+  .horizontal {
+    grid-column: span 2;
+  }
+  
+  .big {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+}
